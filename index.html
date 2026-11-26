@@ -1,104 +1,749 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#16483b">
+<meta name="description" content="Apply for the EduTantr Internship and Training Programme 2026. Explore career domains and build practical skills.">
 <title>EduTantr | Internship Application 2026</title>
+
 <style>
-:root{--green:#126b5b;--dark:#123f35;--mint:#e8f4e9;--light:#f5f9f5;--border:#c9d9cf}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;font-family:Arial,sans-serif;background:var(--light);color:var(--dark)}
-header{min-height:86px;background:#fff;border-bottom:1px solid #d8e4dc;display:flex;align-items:center;justify-content:space-between;padding:12px 4%}
-.brand{display:flex;align-items:center;gap:13px;font-size:27px;font-weight:bold;color:var(--dark)}
-.brand img{width:53px;height:53px;object-fit:contain}.brand span{color:var(--green)}
-.header-btn{padding:15px 24px;border:1px solid var(--green);color:var(--green);border-radius:9px;text-decoration:none;font-weight:bold}
-.container{max-width:1500px;margin:auto;padding:34px 4%;display:grid;grid-template-columns:1.15fr 1fr;gap:28px;align-items:stretch}
-.intro{background:linear-gradient(145deg,#edf7ed,#e1f0e6);border:1px solid #cbded0;border-radius:21px;padding:55px 52px;min-height:650px}
-.tag{font-size:14px;font-weight:bold;letter-spacing:1px;color:#286b59}
-.priority{display:inline-block;background:#dcefe0;padding:8px 12px;border-radius:5px;margin-top:15px;font-size:12px;font-weight:bold}
-.intro h1{font-family:Georgia,serif;font-size:clamp(43px,5vw,68px);line-height:1.08;letter-spacing:-2px;margin:40px 0 25px;color:#123f35}
-.intro h1 em{color:#167663}.intro p{max-width:520px;font-size:19px;line-height:1.7;color:#42665b}
-.primary-btn{display:inline-block;margin-top:12px;padding:18px 25px;background:var(--green);color:#fff;text-decoration:none;border-radius:9px;font-size:16px;font-weight:bold}
-.programme-link{display:block;margin-top:28px;color:var(--green);font-weight:bold}
-.form-card{background:#fff;border:1px solid #d4e1d8;border-radius:21px;padding:42px}
-.form-tag{font-size:13px;letter-spacing:1px;font-weight:bold;color:#286b59}
-.form-card h2{font-family:Georgia,serif;font-size:40px;font-weight:normal;letter-spacing:-1.5px;margin:18px 0 25px}
-.form-group{margin-bottom:19px}label{display:block;font-size:16px;font-weight:bold;margin-bottom:9px}
-input,select,textarea{width:100%;padding:16px;border:1px solid #b9d0c1;border-radius:9px;background:#fcfefc;font-size:16px;color:#23483b;outline:none}
-input:focus,select:focus,textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px #126b5b15}
-textarea{min-height:120px;resize:vertical}
-.submit-btn{width:100%;padding:18px;background:var(--green);border:0;color:#fff;font-size:17px;font-weight:bold;border-radius:9px;cursor:pointer}
-.submit-btn:hover{background:#0c5145}.submit-btn:disabled{opacity:.6;cursor:wait}
-.note{font-size:12px;color:#7b8b80;line-height:1.6;margin-top:16px}
-#status{margin-top:15px;font-weight:bold;font-size:14px;line-height:1.6}
-.success{padding:20px;text-align:center;background:#e8f4e9;border-radius:10px;color:#126b5b}
-footer{text-align:center;padding:25px;color:#718278;font-size:13px}
-@media(max-width:900px){.container{grid-template-columns:1fr;padding:20px}.intro{min-height:auto;padding:35px 28px}.intro h1{font-size:46px;margin-top:25px}.intro p{font-size:16px}.form-card{padding:28px 22px}.form-card h2{font-size:33px}}
-@media(max-width:480px){header{min-height:70px;padding:10px 16px}.brand{font-size:21px}.brand img{width:43px;height:43px}.header-btn{padding:11px 13px;font-size:12px}}
+:root {
+  --green: #126b5b;
+  --dark: #123f35;
+  --mint: #e8f4e9;
+  --light: #f5f9f5;
+  --border: #c9d9cf;
+  --muted: #64796e;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--light);
+  color: var(--dark);
+}
+
+header {
+  min-height: 82px;
+  background: #fff;
+  border-bottom: 1px solid #d8e4dc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 6%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 27px;
+  font-weight: bold;
+  color: var(--dark);
+}
+
+.brand img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.brand span { color: var(--green); }
+
+.header-btn {
+  padding: 13px 22px;
+  background: var(--green);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1380px;
+  margin: auto;
+  padding: 38px 5%;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 35px;
+  align-items: center;
+}
+
+.intro {
+  background: linear-gradient(145deg, #edf7ed, #e1f0e6);
+  border: 1px solid #cbded0;
+  border-radius: 22px;
+  padding: 55px 48px;
+  min-height: 570px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tag {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: #286b59;
+}
+
+.priority {
+  display: inline-block;
+  width: fit-content;
+  background: #dcefe0;
+  padding: 9px 13px;
+  border-radius: 5px;
+  margin-top: 18px;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: .5px;
+}
+
+.intro h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(42px, 5vw, 67px);
+  line-height: 1.08;
+  letter-spacing: -2px;
+  margin: 30px 0 20px;
+  color: var(--dark);
+}
+
+.intro h1 em {
+  color: #167663;
+}
+
+.intro p {
+  max-width: 560px;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #42665b;
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13px;
+  margin: 22px 0;
+}
+
+.benefit {
+  background: #ffffffa8;
+  border: 1px solid #d1e2d5;
+  padding: 13px;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.primary-btn {
+  display: inline-block;
+  width: fit-content;
+  margin-top: 15px;
+  padding: 17px 24px;
+  background: var(--green);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 9px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.primary-btn:hover,
+.submit-btn:hover {
+  background: #0c5145;
+}
+
+.programme-link {
+  display: block;
+  margin-top: 24px;
+  color: var(--green);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.form-card {
+  background: #fff;
+  border: 1px solid #d4e1d8;
+  border-radius: 21px;
+  padding: 36px;
+  box-shadow: 0 12px 35px #123f3509;
+}
+
+.form-tag {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  color: #286b59;
+}
+
+.form-card h2 {
+  font-family: Georgia, serif;
+  font-size: 37px;
+  font-weight: normal;
+  letter-spacing: -1px;
+  margin: 17px 0 10px;
+}
+
+.form-description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin-bottom: 27px;
+}
+
+.form-group { margin-bottom: 18px; }
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 9px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #b9d0c1;
+  border-radius: 9px;
+  background: #fcfefc;
+  font-size: 15px;
+  color: #23483b;
+  outline: none;
+  font-family: Arial, sans-serif;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 0 3px #126b5b15;
+}
+
+textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.optional {
+  font-size: 11px;
+  color: #788b80;
+  font-weight: normal;
+}
+
+.file-help {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 17px;
+  background: var(--green);
+  border: 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.submit-btn:disabled {
+  opacity: .6;
+  cursor: wait;
+}
+
+.note {
+  font-size: 11px;
+  color: #7b8b80;
+  line-height: 1.7;
+  margin-top: 15px;
+}
+
+#status {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.success {
+  padding: 25px;
+  text-align: center;
+  background: var(--mint);
+  border-radius: 12px;
+  color: var(--green);
+}
+
+.success h2 {
+  font-family: Georgia, serif;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-heading .tag {
+  margin-bottom: 12px;
+}
+
+.section-heading h2 {
+  font-family: Georgia, serif;
+  font-size: 38px;
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+.section-heading p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.feature-card {
+  background: #fff;
+  border: 1px solid #d4e1d8;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.feature-icon {
+  font-size: 27px;
+  margin-bottom: 14px;
+}
+
+.feature-card h3 {
+  font-family: Georgia, serif;
+  font-size: 21px;
+  font-weight: normal;
+  margin: 5px 0 12px;
+}
+
+.feature-card p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.faq {
+  max-width: 850px;
+  margin: auto;
+}
+
+details {
+  background: #fff;
+  border: 1px solid #d4e1d8;
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin-bottom: 12px;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+details p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 28px 15px;
+  background: #fff;
+  border-top: 1px solid #d8e4dc;
+  color: #718278;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+@media(max-width: 950px) {
+  .hero { grid-template-columns: 1fr; }
+  .intro { min-height: auto; }
+  .features { grid-template-columns: 1fr 1fr; }
+}
+
+@media(max-width: 600px) {
+  header { min-height: 70px; padding: 10px 16px; }
+  .brand { font-size: 21px; }
+  .brand img { width: 42px; height: 42px; }
+  .header-btn { padding: 11px 13px; font-size: 12px; }
+  .container { padding: 22px 15px; }
+  .intro { padding: 35px 25px; }
+  .intro h1 { font-size: 43px; }
+  .intro p { font-size: 15px; }
+  .benefits { grid-template-columns: 1fr 1fr; }
+  .form-card { padding: 27px 20px; }
+  .form-card h2 { font-size: 32px; }
+  .features { grid-template-columns: 1fr; }
+  .section-heading h2 { font-size: 31px; }
+}
 </style>
 </head>
+
 <body>
+
 <header>
-  <div class="brand"><img src="/logo.png" alt="EduTantr Logo">Edu<span>Tantr</span></div>
+  <div class="brand">
+    <img src="/logo.png" alt="EduTantr Logo">
+    Edu<span>Tantr</span>
+  </div>
   <a href="#application" class="header-btn">Apply Now →</a>
 </header>
 
-<main class="container">
+<main>
+
+<div class="container hero">
+
   <section class="intro">
     <div class="tag">INTERNSHIP &amp; TRAINING / 2026</div>
+
     <div class="priority">PRIORITY CAMPUS ALLOCATION</div>
+
     <h1>Build skills you can <em>show in your work.</em></h1>
-    <p>Choose from exciting learning domains. Practise what you learn through guided assignments and build a project you can explain in an interview.</p>
-    <a href="#application" class="primary-btn">Start my application &nbsp; →</a>
-    <a href="https://www.edutantr.in/" target="_blank" rel="noopener noreferrer" class="programme-link">Programme website</a>
+
+    <p>
+      Explore exciting career domains with EduTantr. Learn practical skills,
+      work on guided assignments and build projects that help you grow
+      professionally and confidently.
+    </p>
+
+    <div class="benefits">
+      <div class="benefit">🎯 Career-focused domains</div>
+      <div class="benefit">💻 Online learning</div>
+      <div class="benefit">📚 Guided assignments</div>
+      <div class="benefit">🚀 Practical project work</div>
+    </div>
+
+    <a href="#application" class="primary-btn">
+      Start my application &nbsp; →
+    </a>
+
+    <a href="https://www.edutantr.in/"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="programme-link">
+      Explore EduTantr website ↗
+    </a>
   </section>
 
   <section class="form-card" id="application">
-    <div class="form-tag">EDUTANTR - 2026 INTAKE</div>
+
+    <div class="form-tag">EDUTANTR · 2026 INTAKE</div>
     <div class="priority">PRIORITY CAMPUS ALLOCATION</div>
+
     <h2>Start your application</h2>
 
+    <p class="form-description">
+      Complete the form below to apply for the EduTantr Internship Programme.
+      Fields marked with * are required.
+    </p>
+
     <form id="applicationForm">
-      <div class="form-group"><label for="name">Name *</label><input id="name" name="name" type="text" placeholder="Enter your name" maxlength="100" required></div>
-      <div class="form-group"><label for="phone">WhatsApp Number *</label><input id="phone" name="phone" type="tel" placeholder="9876543210" maxlength="20" required></div>
-      <div class="form-group"><label for="email">Email ID *</label><input id="email" name="email" type="email" placeholder="Enter your email ID" maxlength="150" required></div>
-      <div class="form-group"><label for="college">College *</label><input id="college" name="college" type="text" placeholder="Enter your college name" maxlength="200" required></div>
-      <div class="form-group"><label for="collegeEmail">College Mail ID</label><input id="collegeEmail" name="collegeEmail" type="email" placeholder="name@college.edu" maxlength="150"></div>
-      <div class="form-group"><label for="department">Department *</label><input id="department" name="department" type="text" placeholder="Enter your department" maxlength="150" required></div>
-      <div class="form-group"><label for="year">Year of Study *</label><select id="year" name="year" required><option value="">Select your year</option><option>1st Year</option><option>2nd Year</option><option>3rd Year</option><option>4th Year</option><option>5th Year</option><option>Recent Graduate</option><option>Other</option></select></div>
-      <div class="form-group"><label for="domain">Interested Domain *</label><select id="domain" name="domain" required><option value="">Select your domain</option><option>Artificial Intelligence</option><option>Machine Learning</option><option>Data Science</option><option>Web Development</option><option>App Development</option><option>Python Programming</option><option>Java Programming</option><option>Cyber Security</option><option>Cloud Computing</option><option>UI/UX Design</option><option>Digital Marketing</option><option>Other</option></select></div>
-      <div class="form-group"><label for="startDate">Preferred Start Date *</label><input id="startDate" name="startDate" type="date" required></div>
-      <div class="form-group"><label for="motivation">Why do you want to do this internship? *</label><textarea id="motivation" name="motivation" placeholder="Tell us why you are interested in this internship..." minlength="15" maxlength="3000" required></textarea></div>
-      <button type="submit" class="submit-btn" id="submitBtn">Submit Application →</button>
+
+      <div class="form-group">
+        <label for="name">Name *</label>
+        <input id="name" name="name" type="text"
+          placeholder="Enter your full name" maxlength="100" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">WhatsApp Number *</label>
+        <input id="phone" name="phone" type="tel"
+          placeholder="9876543210" maxlength="20" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email ID *</label>
+        <input id="email" name="email" type="email"
+          placeholder="Enter your email ID" maxlength="150" required>
+      </div>
+
+      <div class="form-group">
+        <label for="college">College *</label>
+        <input id="college" name="college" type="text"
+          placeholder="Enter your college name" maxlength="200" required>
+      </div>
+
+      <div class="form-group">
+        <label for="collegeEmail">
+          College Mail ID <span class="optional">(Optional)</span>
+        </label>
+        <input id="collegeEmail" name="collegeEmail" type="email"
+          placeholder="name@college.edu" maxlength="150">
+      </div>
+
+      <div class="form-group">
+        <label for="department">Department *</label>
+        <input id="department" name="department" type="text"
+          placeholder="Enter your department" maxlength="150" required>
+      </div>
+
+      <div class="form-group">
+        <label for="year">Year of Study *</label>
+        <select id="year" name="year" required>
+          <option value="">Select your year</option>
+          <option>1st Year</option>
+          <option>2nd Year</option>
+          <option>3rd Year</option>
+          <option>4th Year</option>
+          <option>Graduate</option>
+          <option>Post Graduate</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="domain">Interested Domain *</label>
+        <select id="domain" name="domain" required>
+          <option value="">Select your interested domain</option>
+          <option>AIML</option>
+          <option>Data Analysis</option>
+          <option>Full Stack Web Development</option>
+          <option>Cloud Computing</option>
+          <option>Cyber Security</option>
+          <option>UI/UX</option>
+          <option>Embedded Systems</option>
+          <option>VLSI</option>
+          <option>Digital Marketing</option>
+          <option>Auto Cad</option>
+          <option>Finance and Tally</option>
+          <option>Data Science</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="preferredMonth">Preferred Start Month *</label>
+        <input id="preferredMonth" name="preferredMonth"
+          type="month" required>
+      </div>
+
+      <div class="form-group">
+        <label for="resume">
+          Upload Resume <span class="optional">(Optional)</span>
+        </label>
+        <input id="resume" name="resume" type="file"
+          accept=".pdf,.doc,.docx">
+        <p class="file-help">
+          Accepted formats: PDF, DOC, DOCX. Maximum file size: 5 MB.
+        </p>
+      </div>
+
+      <div class="form-group">
+        <label for="motivation">
+          Why do you want to do this internship?
+          <span class="optional">(Optional)</span>
+        </label>
+        <textarea id="motivation" name="motivation"
+          placeholder="Tell us a little about your interests and goals..."
+          maxlength="3000"></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn" id="submitBtn">
+        Submit Application →
+      </button>
+
       <div id="status" role="status" aria-live="polite"></div>
-      <p class="note">By submitting this form, you confirm that the information provided is accurate and agree that Next Gen EduTantr Pvt Ltd may contact you regarding this internship.</p>
+
+      <p class="note">
+        By submitting this form, you confirm that the information provided
+        is accurate and agree that Next Gen EduTantr Pvt Ltd may contact
+        you regarding this internship.
+      </p>
+
     </form>
 
     <div id="successMessage" class="success" hidden>
-      <h2>Application Submitted!</h2><p>Thank you for applying to EduTantr.</p>
-      <p>Your Application ID:</p><strong id="applicationId"></strong>
+      <h2>Application Submitted!</h2>
+      <p>Thank you for applying to EduTantr.</p>
+      <p>Your Application ID:</p>
+      <strong id="applicationId"></strong>
     </div>
+
   </section>
+</div>
+
+<section class="container">
+  <div class="section-heading">
+    <div class="tag">WHAT THE PROGRAMME INCLUDES</div>
+    <h2>Learning that moves beyond theory</h2>
+    <p>
+      Develop practical capabilities through structured learning,
+      guided work and project-based experience.
+    </p>
+  </div>
+
+  <div class="features">
+
+    <div class="feature-card">
+      <div class="feature-icon">🎯</div>
+      <h3>Career-focused learning</h3>
+      <p>
+        Explore specialised domains and develop skills aligned
+        with your academic and professional interests.
+      </p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">💡</div>
+      <h3>Guided project work</h3>
+      <p>
+        Apply what you learn through practical assignments
+        and build projects that demonstrate your abilities.
+      </p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">🚀</div>
+      <h3>Build your future</h3>
+      <p>
+        Strengthen your knowledge, gain practical exposure
+        and prepare yourself for future opportunities.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="container">
+  <div class="section-heading">
+    <div class="tag">COMMON QUESTIONS</div>
+    <h2>Before you apply</h2>
+  </div>
+
+  <div class="faq">
+
+    <details>
+      <summary>Who can apply for this internship?</summary>
+      <p>
+        Students, graduates and postgraduates interested in developing
+        practical skills in the available domains can apply.
+      </p>
+    </details>
+
+    <details>
+      <summary>Is uploading a resume compulsory?</summary>
+      <p>
+        No. Resume upload is optional. You can submit your application
+        without attaching a resume.
+      </p>
+    </details>
+
+    <details>
+      <summary>Can I choose my preferred domain?</summary>
+      <p>
+        Yes. Select your preferred domain from the available options
+        in the application form.
+      </p>
+    </details>
+
+    <details>
+      <summary>What happens after I submit my application?</summary>
+      <p>
+        Your application will be received by EduTantr. Keep your
+        registered email and WhatsApp number active for further
+        communication.
+      </p>
+    </details>
+
+  </div>
+</section>
+
 </main>
-<footer>© 2026 NEXT GEN EDUTANTR PVT LTD. All Rights Reserved.</footer>
+
+<footer>
+  © 2026 NEXT GEN EDUTANTR PVT LTD. All Rights Reserved.
+  <br>
+  Please keep your registered contact details active for programme-related communication.
+</footer>
 
 <script>
 const form = document.getElementById("applicationForm");
 const statusBox = document.getElementById("status");
 const submitBtn = document.getElementById("submitBtn");
-const dateInput = document.getElementById("startDate");
-dateInput.min = new Date().toISOString().slice(0, 10);
+const monthInput = document.getElementById("preferredMonth");
+const resumeInput = document.getElementById("resume");
+
+// Do not allow a month earlier than the current month.
+const now = new Date();
+const currentMonth =
+  now.getFullYear() + "-" + String(now.getMonth() + 1).padStart(2, "0");
+
+monthInput.min = currentMonth;
+
+function readFileAsBase64(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+
+    reader.onload = () => {
+      const result = reader.result;
+      resolve(String(result).split(",")[1]);
+    };
+
+    reader.onerror = () => reject(new Error("Unable to read the resume file."));
+    reader.readAsDataURL(file);
+  });
+}
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
+
   if (!form.reportValidity()) return;
 
   const data = Object.fromEntries(new FormData(form).entries());
+
   if (data.phone.replace(/\D/g, "").length < 7) {
     statusBox.style.color = "#b42318";
     statusBox.textContent = "Please enter a valid phone number.";
     return;
+  }
+
+  const resumeFile = resumeInput.files[0];
+
+  if (resumeFile) {
+    const allowedTypes = [
+      "application/pdf",
+      "application/msword",
+      "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    ];
+
+    const allowedExtensions = /\.(pdf|doc|docx)$/i;
+
+    if (
+      !allowedExtensions.test(resumeFile.name) ||
+      (resumeFile.type && !allowedTypes.includes(resumeFile.type))
+    ) {
+      statusBox.style.color = "#b42318";
+      statusBox.textContent = "Please upload a PDF, DOC or DOCX file.";
+      return;
+    }
+
+    if (resumeFile.size > 5 * 1024 * 1024) {
+      statusBox.style.color = "#b42318";
+      statusBox.textContent = "Resume size must not exceed 5 MB.";
+      return;
+    }
   }
 
   submitBtn.disabled = true;
@@ -106,24 +751,56 @@ form.addEventListener("submit", async (event) => {
   statusBox.textContent = "";
 
   try {
+    // Keep the existing API field name for compatibility.
+    // The backend should later be updated to store this as preferredMonth.
+    const payload = {
+      ...data,
+      startDate: data.preferredMonth,
+      motivation: data.motivation.trim() || "Not provided"
+    };
+
+    delete payload.preferredMonth;
+    delete payload.resume;
+
+    // Prepare resume data for the backend.
+    // The API must be updated to store this file before it is truly saved.
+    if (resumeFile) {
+      payload.resume = {
+        fileName: resumeFile.name,
+        mimeType: resumeFile.type || "application/octet-stream",
+        dataBase64: await readFileAsBase64(resumeFile)
+      };
+    }
+
     const response = await fetch("/api/applications", {
       method: "POST",
-      headers: {"Content-Type": "application/json"},
-      body: JSON.stringify(data)
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
     });
-    const result = await response.json();
-    if (!response.ok) throw new Error(result.error || "Application submission failed.");
 
-    document.getElementById("applicationId").textContent = result.applicationId;
+    const result = await response.json();
+
+    if (!response.ok) {
+      throw new Error(
+        result.error || "Application submission failed. Please try again."
+      );
+    }
+
+    document.getElementById("applicationId").textContent =
+      result.applicationId;
+
     form.hidden = true;
     document.getElementById("successMessage").hidden = false;
+
   } catch (error) {
     statusBox.style.color = "#b42318";
     statusBox.textContent = error.message;
+
     submitBtn.disabled = false;
     submitBtn.textContent = "Submit Application →";
   }
 });
 </script>
+
 </body>
 </html>
